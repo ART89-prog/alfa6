@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff'),
+        url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('../fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Semibold.woff') format('woff'),
+        url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Extrabold.eot');
+    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('../fonts/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Extrabold.woff') format('woff'),
+        url('../fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+/*------------------
+    Reset styles
+------------------*/
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+        -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body
+{
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    text-rendering: optimizeLegibility;
+    text-decoration-skip: objects;
+}
+
+img
+{
+    border-style: none;
+    display: block;
+}
+
+textarea
+{
+    overflow: auto;
+}
+
+input,
+textarea,
+input:active,
+textarea:active,
+button
+{
+    margin: 0;
+
+    -webkit-border-radius: 0;
+            border-radius: 0;
+         outline: none transparent !important;
+    box-shadow: none;
+
+    -webkit-appearance: none;
+            appearance: none;
+    -moz-outline: none !important;
+}
+
+:focus
+{
+    outline: 0;
+}
+
+:hover,
+:active
+{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+}
+::-ms-clear
+{
+    display: none;
+}
+body {
+    background: #fff;
+    font-family: "Gilroy";
+    font-weight: 700;
+    color: #8182b0;
+}
+.wrap {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    min-height: 100%;    
+}
+.main {
+    flex: 1 0 auto;
+}
+.cont {
+    width: 100%;
+    max-width: 415px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+.main {
+    background: #fff;
+}
+
+
+
+.artboard {
+    margin-top: 50px;
+}
+.artboard .cont {
+    max-width: 640px;
+    width: 100%;
+}
+.artboard_box {
+    display: flex;
+    align-items: center;
+}
+.artboard_image {
+    position: relative;  
+    width: 240px;
+    height: 150px;  
+    flex-shrink: 0;
+}
+.artboard_image img {
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+}
+.artboard_adress {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    color: #1a7af7;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 10px;
+    background: #fff;
+    border-radius: 13px;
+}
+.artboard_adress .icon {
+    margin-right: 7px;
+}
+.artboard_description {
+    margin-left: 19px;
+}
+.artboard_description .title {
+    background: linear-gradient(225deg, #2084ff 0%, #0052d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #325aff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.artboard_description .text {
+    color: #2c2c2c;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.artboard_description button {
+    border: none;
+    width: 113px;
+    height: 34px;
+    border-radius: 5px;
+    background-image: linear-gradient(225deg, #2084ff 0%, #0052d4 100%);
+    color: #ffffff;
+    font-family: "Gilroy";
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.artboard2 .artboard_box {
+    flex-direction: column;
+}
+.artboard2 .artboard .cont {
+    max-width: 320px;
+    width: 100%;
+    padding: 0;
+}
+.artboard2 .artboard_image {
+    position: relative;  
+    width: 100%;
+    height: 284px;  
+    flex-shrink: 0;
+}
+.artboard2 .artboard_image img {
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;    
+}
+.artboard2 .artboard_description {
+    margin-left: 0px;
+    margin-top: 16px;
+}
+.artboard2 .artboard_image .artboard_adress .icon img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.artboard3 .cont {
+    max-width: 400px;
+    width: 100%;
+    padding: 0;
+    padding-right: 20px;
+}
+.artboard3 .artboard_image {
+    position: relative;  
+    width: 200px;
+    height: 400px;  
+    flex-shrink: 0;
+}
+.artboard3 .artboard_image img {
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+}
+
+
+.artboard4 .cont {
+    max-width: 480px;
+    width: 100%;
+    padding: 0;
+    padding-left: 20px;
+}
+.artboard4 .artboard_image {
+    order: 1;
+}
+.artboard4  .artboard_description {
+    margin-right: 50px;
+}
+.artboard4 .artboard_image {
+    position: relative;  
+    width: 200px;
+    height: 320px;  
+    flex-shrink: 0;
+}
+
+
